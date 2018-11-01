@@ -18,7 +18,7 @@ class SubscriptionsServiceProvider extends ServiceProvider
 
         //Migrations
         //$this->loadMigrationsFrom(__DIR__.'/migrations');
-        $this->publishes([__DIR__.'/migrations' => database_path('migrations/'),]);
+        $this->publishes([__DIR__.'/migrations' => database_path('migrations'),]);
 
 
         //Assets
