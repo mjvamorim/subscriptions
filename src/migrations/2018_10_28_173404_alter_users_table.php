@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AlterUsersTable extends Migration
+class AlterUsersTableSubscriptions extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class AlterUsersTable extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->string('refnumber')->nullable();
-        });
+        if (!Schema::hasColumn('users', 'refnumber')) {
+            Schema::table('users', function (Blueprint $table) {
+                $table->string('refnumber')->nullable();
+            });
+        }
     }
 
     /**
