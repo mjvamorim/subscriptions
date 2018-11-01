@@ -9,5 +9,10 @@
             "email": "mjvamorim@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Amorim\\Subscriptions\\": "packages/mjvamorim/subscriptions/src"
+        }
+    }
 }
