@@ -3,6 +3,7 @@
     "description": "Package to control Subscriptions Plans and Payments",
     "keywords": ["laravel", "subscriptions", "plan", "payment","invoice"],
     "license": "MIT",
+    "version": "1.0.1",
      "authors": [
         {
             "name": "Mauricio Amorim",
