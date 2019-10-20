@@ -11,7 +11,7 @@ class SubscriptionsController extends Controller
 
     function index()
     {
-        $subscriptions = Subscription::all();
+        $subscriptions = Subscription::select();
         return view('subscriptions::index',compact('subscriptions'));
     }
 
