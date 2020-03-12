@@ -17,8 +17,8 @@ class CreateCardsTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('user_id');
             $table->string('token')->nullable();
-            $table->string('lastfour')->nullable();
-            $table->string('brand')->nullable();
+            $table->string('lastfour',4)->nullable();
+            $table->string('brand',50)->nullable();
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users');
         });
